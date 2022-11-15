@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+header,footer{
+    background-color: white;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}       
+body{
+    background-image: url(img/foto3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: grey;
+}
+.grid{
+    width: 80%;
+    margin:auto;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+.grid video, iframe{
+    width:100%;
+    margin: auto;
+    border: 3px solid white;
+    transition: all 0.5s ease;
+}
+.grid video:hover,iframe:hover{
+    transform: scale(0.8);   
+    border-radius: 20%;
+}
+audio{
+    margin: auto;
+}
